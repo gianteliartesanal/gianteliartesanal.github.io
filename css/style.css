@@ -9574,12 +9574,12 @@ a.text-dark:hover, a.text-dark:focus {
   animation: action 1s infinite alternate;
 }
 
-.only-moblie-espave{
+.only-moblie-gianteli{
   display: none;
 }
 
 @media (max-width: 600px) {
- .only-moblie-espave{
+ .only-moblie-gianteli{
     display: inline-block;
  }
 }
