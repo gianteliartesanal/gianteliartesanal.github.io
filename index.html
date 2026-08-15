@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gianteli | Catálogo de Bebidas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <p class="eyebrow brand-eyebrow">Gianteli Artesanal</p>
+          <p class="brand-name">Bebidas Premium</p>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#home" data-key="nav_home">Inicio</a>
+        <a href="#catalog" data-key="nav_catalog">Catálogo</a>
+        <a href="#services" data-key="nav_services">Servicios</a>
+        <a href="#mission" data-key="nav_mission">Misión</a>
+        <a href="#about" data-key="nav_about">Acerca</a>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggle" class="lang-btn">ENG</button>
+        <button id="navToggle" class="nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-key="hero_tagline">Selecciona calidad, sabor y experiencia.</p>
+          <h1 data-key="hero_title">Catálogo de bebidas alcohólicas premium</h1>
+          <p class="hero-text" data-key="hero_text">Licores, whisky, vinos y selecciones exclusivas para tu evento o tienda.</p>
+        </div>
+        <div class="hero-slider" aria-label="Slider de productos destacados">
+          <button class="slider-btn prev" id="prevSlide" aria-label="Anterior">‹</button>
+          <div class="slider-track">
+            <article class="slide active">
+              <img src="img/carousel-1.jpg" alt="Licor Merkaba de Maracuyá" loading="lazy">
+            </article>
+            <article class="slide">
+              <img src="img/carousel-2.jpg" alt="Licor Merkaba de Anís" loading="lazy">
+            </article>
+            <article class="slide">
+              <img src="img/carousel-3.jpg" alt="Licor Merkaba de Chocolate" loading="lazy">
+            </article>
+            <article class="slide">
+              <img src="img/carousel-4.jpg" alt="Licor Merkaba de Guayaba" loading="lazy">
+            </article>
+            <article class="slide">
+              <img src="img/carousel-6.jpg" alt="Licor Merkaba de Piña" loading="lazy">
+            </article>
+          </div>
+          <button class="slider-btn next" id="nextSlide" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label" data-key="catalog_label">Catálogo de productos</p>
+            <h2 data-key="catalog_title">Nuestros favoritos seleccionados</h2>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filtros de categoría">
+            <button class="filter-btn active" data-filter="all" data-key="filter_all">Todos</button>
+            <button class="filter-btn" data-filter="Licores" data-key="filter_licores">Licores</button>
+            <button class="filter-btn" data-filter="Whisky" data-key="filter_whisky">Whisky</button>
+            <button class="filter-btn" data-filter="Vinos" data-key="filter_vinos">Vinos</button>
+            <button class="filter-btn" data-filter="Otros" data-key="filter_otros">Otros</button>
+          </div>
+        </div>
+        <div class="grid catalog-grid" id="productGrid">
+          <article class="product-card" data-category="Licores">
+            <div class="product-photo has-photo"><img src="img/product-2.jpg" alt="Licor Merkaba Maracuyá" loading="lazy"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_1_category">Licores</span>
+              <h3 data-key="product_1_name">Maracuyá</h3>
+              <p data-key="product_1_desc">Licor artesanal con el toque tropical y ácido del maracuyá.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Licores">
+            <div class="product-photo has-photo"><img src="img/product-4.jpg" alt="Licor Merkaba Chocolate" loading="lazy"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_2_category">Licores</span>
+              <h3 data-key="product_2_name">Chocolate</h3>
+              <p data-key="product_2_desc">Licor artesanal con notas suaves de cacao y chocolate.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Licores">
+            <div class="product-photo has-photo"><img src="img/product-5.jpg" alt="Licor Merkaba Anís" loading="lazy"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_3_category">Licores</span>
+              <h3 data-key="product_3_name">Anís</h3>
+              <p data-key="product_3_desc">Licor artesanal con el aroma clásico y herbal del anís.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Licores">
+            <div class="product-photo has-photo"><img src="img/product-6.jpg" alt="Abydos Licor de Almendras" loading="lazy"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_4_category">Licores</span>
+              <h3 data-key="product_4_name">Almendras</h3>
+              <p data-key="product_4_desc">Licor de almendras artesanal, suave y aromático.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Licores">
+            <div class="product-photo has-photo"><img src="img/product-7.jpg" alt="Licor Merkaba Jengibre" loading="lazy"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_5_category">Licores</span>
+              <h3 data-key="product_5_name">Jengibre</h3>
+              <p data-key="product_5_desc">Licor artesanal con el picante fresco del jengibre.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Whisky">
+            <div class="product-photo"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_6_category">Whisky</span>
+              <h3 data-key="product_6_name">Single Malt Clásico</h3>
+              <p data-key="product_6_desc">Cálido y sofisticado para paladares exigentes.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Vinos">
+            <div class="product-photo"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_7_category">Vinos</span>
+              <h3 data-key="product_7_name">Tinto Reserva</h3>
+              <p data-key="product_7_desc">Elegante y complejo, ideal para cenas formales.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="Otros">
+            <div class="product-photo"></div>
+            <div class="product-copy">
+              <span class="category-label" data-key="product_8_category">Otros</span>
+              <h3 data-key="product_8_name">Vermut Artesanal</h3>
+              <p data-key="product_8_desc">Aromático y sofisticado, ideal para coctelería.</p>
+              <button class="detail-btn" data-key="details_button">Ver detalles</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container two-col">
+        <div>
+          <h2 data-key="services_title">Servicios ofrecidos</h2>
+          <p class="section-text" data-key="services_text">Apoyamos la planificación de tus eventos con barras móviles y experiencias personalizadas.</p>
+          <ul class="list">
+            <li data-key="service_1">Barra de cocteles</li>
+            <li data-key="service_2">Obsequios y combos de producto</li>
+            <li data-key="service_3">Stand en eventos privados</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3 data-key="service_highlight">Atención profesional y entrega segura</h3>
+          <p data-key="service_highlight_text">Trabajamos con selección premium, asesoría a medida y presentación elegante para cada cliente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section section-alt">
+      <div class="container">
+        <h2 data-key="mission_title">Nuestra misión</h2>
+        <p class="section-text" data-key="mission_text">Elevar el servicio de bebidas con una propuesta clara, responsable y enfocada en la calidad.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-key="about_title">Acerca de Gianteli</h2>
+        <p class="section-text" data-key="about_text">Con experiencia en eventos y comercio selecto, ofrecemos un catálogo cuidado y una experiencia de compra sencilla.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col footer-col-brand">
+          <img src="img/logo.jpg" alt="Gianteli Artesanal" class="footer-logo">
+        </div>
+        <div class="footer-col">
+          <h3 data-key="footer_hours_title">Horario</h3>
+          <ul class="footer-list">
+            <li data-key="footer_hours_1">Lun-Vie: 9am - 6pm</li>
+            <li data-key="footer_hours_2">Sáb: 10am - 4pm</li>
+            <li data-key="footer_hours_3">Dom: Cerrado</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-key="footer_social_title">Síguenos</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-social-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.16.55.55.9 1.11 1.16 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12 0 2.72-.01 3.06-.06 4.12-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.16 1.77 4.9 4.9 0 0 1-1.77 1.16c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06-2.72 0-3.06-.01-4.12-.06-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12c0-2.72.01-3.06.06-4.12.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.16-1.77a4.9 4.9 0 0 1 1.77-1.16c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.97.04-1.5.2-1.85.34-.46.18-.79.4-1.14.75-.35.35-.57.68-.75 1.14-.14.35-.3.88-.34 1.85C3.83 9 3.82 9.33 3.82 12s.01 3 .06 4.04c.04.97.2 1.5.34 1.85.18.46.4.79.75 1.14.35.35.68.57 1.14.75.35.14.88.3 1.85.34 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.97-.04 1.5-.2 1.85-.34.46-.18.79-.4 1.14-.75.35-.35.57-.68.75-1.14.14-.35.3-.88.34-1.85.05-1.04.06-1.37.06-4.04s-.01-3-.06-4.04c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.14 3.1 3.1 0 0 0-1.14-.75c-.35-.14-.88-.3-1.85-.34C14.99 3.81 14.67 3.8 12 3.8zm0 3.06a5.14 5.14 0 1 1 0 10.28 5.14 5.14 0 0 1 0-10.28zm0 1.8a3.34 3.34 0 1 0 0 6.68 3.34 3.34 0 0 0 0-6.68zm5.34-1.98a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+                </svg>
+                <span data-key="footer_instagram">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span>&copy; 2026 Gianteli.</span> <span data-key="footer_text">Catálogo de bebidas alcohólicas, distribuido con estilo y confiabilidad.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
