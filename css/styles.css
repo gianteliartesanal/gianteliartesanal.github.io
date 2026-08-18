@@ -516,7 +516,41 @@ button {
   }
 
   .catalog-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .product-photo {
+    min-height: 130px;
+    max-height: 180px;
+  }
+
+  .product-photo.has-photo img {
+    padding: 0.75rem;
+  }
+
+  .product-copy {
+    padding: 0.9rem;
+  }
+
+  .category-label {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-copy h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .product-copy p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .detail-btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
   }
 
   .filter-btn {
