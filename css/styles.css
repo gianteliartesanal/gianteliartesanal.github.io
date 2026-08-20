@@ -495,13 +495,16 @@ button {
   }
 
   .footer-columns {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1.5rem;
     text-align: center;
   }
 
   .footer-col-brand {
+    grid-column: 1 / -1;
     justify-content: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
   }
 
   .footer-social-link {
