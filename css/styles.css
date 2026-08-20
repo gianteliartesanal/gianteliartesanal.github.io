@@ -280,7 +280,6 @@ button {
   overflow: hidden;
   box-shadow: var(--shadow);
   display: grid;
-  gap: 1rem;
 }
 
 .product-photo {
