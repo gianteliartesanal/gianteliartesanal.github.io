@@ -15,31 +15,15 @@ const translations = {
     filter_whisky: "Whisky",
     filter_vinos: "Vinos",
     filter_otros: "Otros",
-    product_1_category: "Licores",
-    product_1_name: "Maracuyá",
-    product_1_desc: "Licor artesanal con el toque tropical y ácido del maracuyá.",
-    product_2_category: "Licores",
-    product_2_name: "Chocolate",
-    product_2_desc: "Licor artesanal con notas suaves de cacao y chocolate.",
-    product_3_category: "Licores",
-    product_3_name: "Anís",
-    product_3_desc: "Licor artesanal con el aroma clásico y herbal del anís.",
-    product_4_category: "Licores",
-    product_4_name: "Almendras",
-    product_4_desc: "Licor de almendras artesanal, suave y aromático.",
-    product_5_category: "Licores",
-    product_5_name: "Jengibre",
-    product_5_desc: "Licor artesanal con el picante fresco del jengibre.",
-    product_6_category: "Whisky",
-    product_6_name: "Single Malt Clásico",
-    product_6_desc: "Cálido y sofisticado para paladares exigentes.",
-    product_7_category: "Vinos",
-    product_7_name: "Tinto Reserva",
-    product_7_desc: "Elegante y complejo, ideal para cenas formales.",
-    product_8_category: "Otros",
-    product_8_name: "Vermut Artesanal",
-    product_8_desc: "Aromático y sofisticado, ideal para coctelería.",
     details_button: "Ver detalles",
+    detail_back: "← Volver al catálogo",
+    detail_code_label: "Código:",
+    detail_units: "Unidades",
+    detail_total: "Total",
+    detail_add: "Agregar",
+    detail_added: "Agregado ✓",
+    detail_description: "Descripción",
+    detail_not_found: "Producto no encontrado.",
     services_title: "Servicios ofrecidos",
     services_text: "Apoyamos la planificación de tus eventos con barras móviles y experiencias personalizadas.",
     service_1: "Barra de cocteles",
@@ -75,31 +59,15 @@ const translations = {
     filter_whisky: "Whisky",
     filter_vinos: "Wines",
     filter_otros: "Others",
-    product_1_category: "Spirits",
-    product_1_name: "Passion Fruit",
-    product_1_desc: "Artisanal liqueur with the tropical, tangy touch of passion fruit.",
-    product_2_category: "Spirits",
-    product_2_name: "Chocolate",
-    product_2_desc: "Artisanal liqueur with smooth cacao and chocolate notes.",
-    product_3_category: "Spirits",
-    product_3_name: "Anise",
-    product_3_desc: "Artisanal liqueur with the classic, herbal aroma of anise.",
-    product_4_category: "Spirits",
-    product_4_name: "Almond",
-    product_4_desc: "Artisanal almond liqueur, smooth and aromatic.",
-    product_5_category: "Spirits",
-    product_5_name: "Ginger",
-    product_5_desc: "Artisanal liqueur with the fresh, spicy kick of ginger.",
-    product_6_category: "Whisky",
-    product_6_name: "Classic Single Malt",
-    product_6_desc: "Warm and sophisticated for discerning palates.",
-    product_7_category: "Wines",
-    product_7_name: "Reserva Red",
-    product_7_desc: "Elegant and complex, ideal for formal dinners.",
-    product_8_category: "Others",
-    product_8_name: "Artisan Vermouth",
-    product_8_desc: "Aromatic and sophisticated, ideal for cocktails.",
     details_button: "View details",
+    detail_back: "← Back to catalog",
+    detail_code_label: "Code:",
+    detail_units: "Units",
+    detail_total: "Total",
+    detail_add: "Add",
+    detail_added: "Added ✓",
+    detail_description: "Description",
+    detail_not_found: "Product not found.",
     services_title: "Offered services",
     services_text: "We support your event planning with mobile bars and personalized experiences.",
     service_1: "Cocktail bar",
@@ -126,11 +94,151 @@ const navToggle = document.getElementById("navToggle");
 const mainNav = document.getElementById("mainNav");
 const translatableElements = Array.from(document.querySelectorAll("[data-key]"));
 const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
-const productCards = Array.from(document.querySelectorAll(".product-card"));
 const slides = Array.from(document.querySelectorAll(".slide"));
+const productGrid = document.getElementById("productGrid");
+const productDetail = document.getElementById("productDetail");
 let currentLang = "es";
 let currentSlide = 0;
 let slideInterval;
+let currentFilter = "all";
+let productsData = null;
+
+function categoryLabel(category, lang) {
+  const map = {
+    Licores: "filter_licores",
+    Whisky: "filter_whisky",
+    Vinos: "filter_vinos",
+    Otros: "filter_otros"
+  };
+  const key = map[category];
+  return key ? translations[lang][key] : category;
+}
+
+function renderCatalog() {
+  if (!productGrid || !productsData) return;
+  productGrid.innerHTML = "";
+  productsData.forEach((product) => {
+    const card = document.createElement("article");
+    card.className = "product-card";
+    card.dataset.category = product.category;
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+
+    const photo = document.createElement("div");
+    photo.className = product.image ? "product-photo has-photo" : "product-photo";
+    if (product.image) {
+      const img = document.createElement("img");
+      img.src = product.image;
+      img.alt = product[currentLang].name;
+      img.loading = "lazy";
+      photo.appendChild(img);
+    }
+
+    const copy = document.createElement("div");
+    copy.className = "product-copy";
+
+    const label = document.createElement("span");
+    label.className = "category-label";
+    label.textContent = categoryLabel(product.category, currentLang);
+
+    const name = document.createElement("h3");
+    name.textContent = product[currentLang].name;
+
+    const desc = document.createElement("p");
+    desc.textContent = product[currentLang].desc;
+
+    const link = document.createElement("a");
+    link.className = "detail-btn";
+    link.href = `product.html?id=${product.id}`;
+    link.textContent = translations[currentLang].details_button;
+
+    copy.append(label, name, desc, link);
+    card.append(photo, copy);
+
+    card.addEventListener("click", () => {
+      window.location.href = link.href;
+    });
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.href = link.href;
+      }
+    });
+
+    productGrid.appendChild(card);
+  });
+  applyFilterVisibility();
+}
+
+function applyFilterVisibility() {
+  if (!productGrid) return;
+  productGrid.querySelectorAll(".product-card").forEach((card) => {
+    const isVisible = currentFilter === "all" || card.dataset.category === currentFilter;
+    card.style.display = isVisible ? "grid" : "none";
+  });
+}
+
+function setActiveFilter(filter) {
+  currentFilter = filter;
+  filterButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.filter === filter);
+  });
+  applyFilterVisibility();
+}
+
+function getProductIdFromUrl() {
+  return Number(new URLSearchParams(window.location.search).get("id"));
+}
+
+function updateTotal() {
+  const unitsSelect = document.getElementById("detailUnits");
+  const totalEl = document.getElementById("detailTotal");
+  if (!productDetail || !unitsSelect || !totalEl || !productDetail.dataset.productId) return;
+  const product = productsData.find((p) => p.id === Number(productDetail.dataset.productId));
+  if (!product) return;
+  const units = Number(unitsSelect.value);
+  totalEl.textContent = `US$ ${(product.price * units).toFixed(2)}`;
+}
+
+function renderProductDetail() {
+  if (!productDetail || !productsData) return;
+  const id = getProductIdFromUrl();
+  const product = productsData.find((p) => p.id === id);
+  const content = document.getElementById("detailContent");
+  const notFound = document.getElementById("detailNotFound");
+
+  if (!product) {
+    if (content) content.style.display = "none";
+    if (notFound) notFound.style.display = "block";
+    return;
+  }
+
+  if (content) content.style.display = "";
+  if (notFound) notFound.style.display = "none";
+  productDetail.dataset.productId = product.id;
+
+  const photo = document.getElementById("detailPhoto");
+  const image = document.getElementById("detailImage");
+  if (product.image) {
+    photo.classList.add("has-photo");
+    image.src = product.image;
+    image.alt = product[currentLang].name;
+    image.style.display = "";
+  } else {
+    photo.classList.remove("has-photo");
+    image.removeAttribute("src");
+    image.style.display = "none";
+  }
+
+  document.getElementById("detailCategory").textContent = categoryLabel(product.category, currentLang);
+  document.getElementById("detailName").textContent = product[currentLang].name;
+  document.getElementById("detailCode").textContent = product.code;
+  document.getElementById("detailPrice").textContent = product.price.toFixed(2);
+  document.getElementById("detailDesc").textContent = product[currentLang].desc;
+  document.title = `Gianteli | ${product[currentLang].name}`;
+
+  updateTotal();
+}
 
 function updateLanguage(lang) {
   currentLang = lang;
@@ -142,16 +250,10 @@ function updateLanguage(lang) {
   });
   document.documentElement.lang = lang;
   languageButton.textContent = lang === "es" ? "ENG" : "ESP";
-}
-
-function setActiveFilter(filter) {
-  filterButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.filter === filter);
-  });
-  productCards.forEach((card) => {
-    const isVisible = filter === "all" || card.dataset.category === filter;
-    card.style.display = isVisible ? "grid" : "none";
-  });
+  if (productsData) {
+    renderCatalog();
+    renderProductDetail();
+  }
 }
 
 function showSlide(index) {
@@ -178,6 +280,8 @@ function startSlideShow() {
 function initSlider() {
   const nextButton = document.getElementById("nextSlide");
   const prevButton = document.getElementById("prevSlide");
+
+  if (!nextButton || !prevButton || slides.length === 0) return;
 
   nextButton.addEventListener("click", () => {
     nextSlide();
@@ -221,6 +325,36 @@ filterButtons.forEach((button) => {
   });
 });
 
+const unitsSelect = document.getElementById("detailUnits");
+if (unitsSelect) {
+  unitsSelect.addEventListener("change", updateTotal);
+}
+
+const addToCartBtn = document.getElementById("addToCartBtn");
+if (addToCartBtn) {
+  addToCartBtn.addEventListener("click", () => {
+    addToCartBtn.textContent = translations[currentLang].detail_added;
+    addToCartBtn.disabled = true;
+    setTimeout(() => {
+      addToCartBtn.textContent = translations[currentLang].detail_add;
+      addToCartBtn.disabled = false;
+    }, 1500);
+  });
+}
+
 updateLanguage(currentLang);
 setActiveFilter("all");
 initSlider();
+
+if (productGrid || productDetail) {
+  fetch("js/products.json")
+    .then((response) => response.json())
+    .then((data) => {
+      productsData = data;
+      renderCatalog();
+      renderProductDetail();
+    })
+    .catch((error) => {
+      console.error("No se pudieron cargar los productos:", error);
+    });
+}

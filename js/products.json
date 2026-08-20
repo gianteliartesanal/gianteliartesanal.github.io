@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "Licores",
+    "image": "img/product-2.jpg",
+    "price": 24.99,
+    "code": "GNT-001",
+    "es": {
+      "name": "Maracuyá",
+      "desc": "Licor artesanal con el toque tropical y ácido del maracuyá."
+    },
+    "en": {
+      "name": "Passion Fruit",
+      "desc": "Artisanal liqueur with the tropical, tangy touch of passion fruit."
+    }
+  },
+  {
+    "id": 2,
+    "category": "Licores",
+    "image": "img/product-4.jpg",
+    "price": 24.99,
+    "code": "GNT-002",
+    "es": {
+      "name": "Chocolate",
+      "desc": "Licor artesanal con notas suaves de cacao y chocolate."
+    },
+    "en": {
+      "name": "Chocolate",
+      "desc": "Artisanal liqueur with smooth cacao and chocolate notes."
+    }
+  },
+  {
+    "id": 3,
+    "category": "Licores",
+    "image": "img/product-5.jpg",
+    "price": 22.99,
+    "code": "GNT-003",
+    "es": {
+      "name": "Anís",
+      "desc": "Licor artesanal con el aroma clásico y herbal del anís."
+    },
+    "en": {
+      "name": "Anise",
+      "desc": "Artisanal liqueur with the classic, herbal aroma of anise."
+    }
+  },
+  {
+    "id": 4,
+    "category": "Licores",
+    "image": "img/product-6.jpg",
+    "price": 21.99,
+    "code": "GNT-004",
+    "es": {
+      "name": "Almendras",
+      "desc": "Licor de almendras artesanal, suave y aromático."
+    },
+    "en": {
+      "name": "Almond",
+      "desc": "Artisanal almond liqueur, smooth and aromatic."
+    }
+  },
+  {
+    "id": 5,
+    "category": "Licores",
+    "image": "img/product-7.jpg",
+    "price": 24.99,
+    "code": "GNT-005",
+    "es": {
+      "name": "Jengibre",
+      "desc": "Licor artesanal con el picante fresco del jengibre."
+    },
+    "en": {
+      "name": "Ginger",
+      "desc": "Artisanal liqueur with the fresh, spicy kick of ginger."
+    }
+  },
+  {
+    "id": 6,
+    "category": "Whisky",
+    "image": null,
+    "price": 34.99,
+    "code": "GNT-006",
+    "es": {
+      "name": "Single Malt Clásico",
+      "desc": "Cálido y sofisticado para paladares exigentes."
+    },
+    "en": {
+      "name": "Classic Single Malt",
+      "desc": "Warm and sophisticated for discerning palates."
+    }
+  },
+  {
+    "id": 7,
+    "category": "Vinos",
+    "image": null,
+    "price": 28.99,
+    "code": "GNT-007",
+    "es": {
+      "name": "Tinto Reserva",
+      "desc": "Elegante y complejo, ideal para cenas formales."
+    },
+    "en": {
+      "name": "Reserva Red",
+      "desc": "Elegant and complex, ideal for formal dinners."
+    }
+  },
+  {
+    "id": 8,
+    "category": "Otros",
+    "image": null,
+    "price": 26.99,
+    "code": "GNT-008",
+    "es": {
+      "name": "Vermut Artesanal",
+      "desc": "Aromático y sofisticado, ideal para coctelería."
+    },
+    "en": {
+      "name": "Artisan Vermouth",
+      "desc": "Aromatic and sophisticated, ideal for cocktails."
+    }
+  }
+]

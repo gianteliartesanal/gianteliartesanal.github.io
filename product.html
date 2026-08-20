@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gianteli | Detalle de producto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#home" class="brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <p class="eyebrow brand-eyebrow">Gianteli Artesanal</p>
+          <p class="brand-name">Bebidas Premium</p>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html#home" data-key="nav_home">Inicio</a>
+        <a href="index.html#catalog" data-key="nav_catalog">Catálogo</a>
+        <a href="index.html#services" data-key="nav_services">Servicios</a>
+        <a href="index.html#mission" data-key="nav_mission">Misión</a>
+        <a href="index.html#about" data-key="nav_about">Acerca</a>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggle" class="lang-btn">ENG</button>
+        <button id="navToggle" class="nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="productDetail">
+      <div class="container">
+        <a href="index.html#catalog" class="back-link" data-key="detail_back">← Volver al catálogo</a>
+
+        <div id="detailContent">
+          <div class="detail-grid">
+            <div class="detail-photo" id="detailPhoto">
+              <img id="detailImage" alt="" loading="lazy">
+            </div>
+            <div class="detail-info">
+              <span class="category-label" id="detailCategory"></span>
+              <h1 id="detailName"></h1>
+              <p class="detail-code"><span data-key="detail_code_label">Código:</span> <span id="detailCode"></span></p>
+              <p class="detail-price"><span class="currency">US$</span> <strong id="detailPrice"></strong></p>
+
+              <div class="detail-qty-row">
+                <div class="detail-field">
+                  <label for="detailUnits" data-key="detail_units">Unidades</label>
+                  <select id="detailUnits">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <div class="detail-field">
+                  <span data-key="detail_total">Total</span>
+                  <p id="detailTotal">US$ 0.00</p>
+                </div>
+                <button id="addToCartBtn" class="detail-add-btn" data-key="detail_add">Agregar</button>
+              </div>
+
+              <hr class="detail-divider">
+
+              <h2 data-key="detail_description">Descripción</h2>
+              <p id="detailDesc"></p>
+            </div>
+          </div>
+        </div>
+
+        <p id="detailNotFound" class="detail-not-found" data-key="detail_not_found" style="display: none;">Producto no encontrado.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col footer-col-brand">
+          <img src="img/logo.jpg" alt="Gianteli Artesanal" class="footer-logo">
+        </div>
+        <div class="footer-col">
+          <h3 data-key="footer_hours_title">Horario</h3>
+          <ul class="footer-list">
+            <li data-key="footer_hours_1">Lun-Vie: 9am - 6pm</li>
+            <li data-key="footer_hours_2">Sáb: 10am - 4pm</li>
+            <li data-key="footer_hours_3">Dom: Cerrado</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 data-key="footer_social_title">Síguenos</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="footer-social-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.16.55.55.9 1.11 1.16 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12 0 2.72-.01 3.06-.06 4.12-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.16 1.77 4.9 4.9 0 0 1-1.77 1.16c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06-2.72 0-3.06-.01-4.12-.06-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.16 4.9 4.9 0 0 1-1.16-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12c0-2.72.01-3.06.06-4.12.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.16-1.77a4.9 4.9 0 0 1 1.77-1.16c.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.28 2 12 2zm0 1.8c-2.67 0-2.99.01-4.04.06-.97.04-1.5.2-1.85.34-.46.18-.79.4-1.14.75-.35.35-.57.68-.75 1.14-.14.35-.3.88-.34 1.85C3.83 9 3.82 9.33 3.82 12s.01 3 .06 4.04c.04.97.2 1.5.34 1.85.18.46.4.79.75 1.14.35.35.68.57 1.14.75.35.14.88.3 1.85.34 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.97-.04 1.5-.2 1.85-.34.46-.18.79-.4 1.14-.75.35-.35.57-.68.75-1.14.14-.35.3-.88.34-1.85.05-1.04.06-1.37.06-4.04s-.01-3-.06-4.04c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.14 3.1 3.1 0 0 0-1.14-.75c-.35-.14-.88-.3-1.85-.34C14.99 3.81 14.67 3.8 12 3.8zm0 3.06a5.14 5.14 0 1 1 0 10.28 5.14 5.14 0 0 1 0-10.28zm0 1.8a3.34 3.34 0 1 0 0 6.68 3.34 3.34 0 0 0 0-6.68zm5.34-1.98a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/>
+                </svg>
+                <span data-key="footer_instagram">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span>&copy; 2026 Gianteli.</span> <span data-key="footer_text">Catálogo de bebidas alcohólicas, distribuido con estilo y confiabilidad.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
