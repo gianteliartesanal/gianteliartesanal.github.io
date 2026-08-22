@@ -13,8 +13,8 @@ const translations = {
     filter_all: "Todos",
     filter_licores: "Licores",
     filter_whisky: "Whisky",
+    filter_ron: "Ron",
     filter_vinos: "Vinos",
-    filter_otros: "Otros",
     details_button: "Ver detalles",
     detail_back: "← Volver al catálogo",
     detail_code_label: "Código:",
@@ -57,8 +57,8 @@ const translations = {
     filter_all: "All",
     filter_licores: "Spirits",
     filter_whisky: "Whisky",
+    filter_ron: "Rum",
     filter_vinos: "Wines",
-    filter_otros: "Others",
     details_button: "View details",
     detail_back: "← Back to catalog",
     detail_code_label: "Code:",
@@ -107,8 +107,8 @@ function categoryLabel(category, lang) {
   const map = {
     Licores: "filter_licores",
     Whisky: "filter_whisky",
-    Vinos: "filter_vinos",
-    Otros: "filter_otros"
+    Ron: "filter_ron",
+    Vinos: "filter_vinos"
   };
   const key = map[category];
   return key ? translations[lang][key] : category;
@@ -145,7 +145,7 @@ function renderCatalog() {
     name.textContent = product[currentLang].name;
 
     const desc = document.createElement("p");
-    desc.textContent = product[currentLang].desc;
+    desc.textContent = product[currentLang].shortDesc;
 
     const link = document.createElement("a");
     link.className = "detail-btn";
@@ -233,6 +233,7 @@ function renderProductDetail() {
   document.getElementById("detailCategory").textContent = categoryLabel(product.category, currentLang);
   document.getElementById("detailName").textContent = product[currentLang].name;
   document.getElementById("detailCode").textContent = product.code;
+  document.getElementById("detailVolume").textContent = `${product.volume} · ${product.abv} Vol.`;
   document.getElementById("detailPrice").textContent = product.price.toFixed(2);
   document.getElementById("detailDesc").textContent = product[currentLang].desc;
   document.title = `Gianteli | ${product[currentLang].name}`;

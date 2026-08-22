@@ -2,121 +2,248 @@
   {
     "id": 1,
     "category": "Licores",
-    "image": "img/product-2.jpg",
-    "price": 24.99,
-    "code": "GNT-001",
+    "image": "img/Merkaba-Maracuya.jpg",
+    "volume": "500ml",
+    "abv": "25%",
+    "price": 25.00,
+    "code": "GIA-MKM",
     "es": {
-      "name": "Maracuyá",
-      "desc": "Licor artesanal con el toque tropical y ácido del maracuyá."
+      "name": "Merkaba Maracuyá",
+      "shortDesc": "Licor que no necesita presentación con maracuyás premium rigurosamente seleccionadas.",
+      "desc": "Este licor es para esos paladares que buscan lo exótico, un licor que no necesita presentación con maracuyás premium rigurosamente seleccionadas. Elaborado bajo un proceso artesanal que resulta en un licor de alta calidad, cuerpo y sabor."
     },
     "en": {
-      "name": "Passion Fruit",
-      "desc": "Artisanal liqueur with the tropical, tangy touch of passion fruit."
+      "name": "Merkaba Passion Fruit",
+      "shortDesc": "A liqueur that needs no introduction, made with rigorously selected premium passion fruit.",
+      "desc": "This liqueur is for palates seeking the exotic — it needs no introduction, made with rigorously selected premium passion fruit. Crafted through an artisanal process that results in a liqueur of exceptional quality, body, and flavor."
     }
   },
   {
     "id": 2,
     "category": "Licores",
-    "image": "img/product-4.jpg",
-    "price": 24.99,
-    "code": "GNT-002",
+    "image": null,
+    "volume": "500ml",
+    "abv": "25%",
+    "price": 25.00,
+    "code": "GIA-MKP",
     "es": {
-      "name": "Chocolate",
-      "desc": "Licor artesanal con notas suaves de cacao y chocolate."
+      "name": "Merkaba Piña",
+      "shortDesc": "Nuestro licor de piña nace de las más dulces y jugosas piñas de Las Zanguengas, La Chorrera.",
+      "desc": "Nuestro licor de piña nace de las más dulces y jugosas piñas de Las Zanguengas, La Chorrera, ganador del premio a mejor derivado de la Feria de la Piña de La Chorrera del 2026. Este licor es de un gran aroma y cuerpo. Elaborado bajo un proceso artesanal de clarificación y maduración."
     },
     "en": {
-      "name": "Chocolate",
-      "desc": "Artisanal liqueur with smooth cacao and chocolate notes."
+      "name": "Merkaba Pineapple",
+      "shortDesc": "Our pineapple liqueur is made from the sweetest, juiciest pineapples of Las Zanguengas, La Chorrera.",
+      "desc": "Our pineapple liqueur is made from the sweetest, juiciest pineapples of Las Zanguengas, La Chorrera — winner of the Best Derivative Product award at the 2026 La Chorrera Pineapple Fair. This liqueur has a rich aroma and body, crafted through an artisanal clarification and aging process."
     }
   },
   {
     "id": 3,
     "category": "Licores",
-    "image": "img/product-5.jpg",
-    "price": 22.99,
-    "code": "GNT-003",
+    "image": "img/Merkaba-Cacao.jpg",
+    "volume": "500ml",
+    "abv": "25%",
+    "price": 25.00,
+    "code": "GIA-MKC",
     "es": {
-      "name": "Anís",
-      "desc": "Licor artesanal con el aroma clásico y herbal del anís."
+      "name": "Merkaba Cacao",
+      "shortDesc": "Es un licor de cacao premium 100% panameño.",
+      "desc": "Es un licor de cacao premium 100% panameño, proveniente de la costa caribeña de Colón. Es realmente un licor que tienes que probar. Elaborado bajo un proceso artesanal que resulta en un licor de alta calidad, cuerpo y sabor."
     },
     "en": {
-      "name": "Anise",
-      "desc": "Artisanal liqueur with the classic, herbal aroma of anise."
+      "name": "Merkaba Cacao",
+      "shortDesc": "A premium 100% Panamanian cacao liqueur.",
+      "desc": "A premium 100% Panamanian cacao liqueur from the Caribbean coast of Colón. This is truly a liqueur you have to try, crafted through an artisanal process that results in exceptional quality, body, and flavor."
     }
   },
   {
     "id": 4,
     "category": "Licores",
-    "image": "img/product-6.jpg",
-    "price": 21.99,
-    "code": "GNT-004",
+    "image": "img/Merkaba-Anis.jpg",
+    "volume": "500ml",
+    "abv": "25%",
+    "price": 25.00,
+    "code": "GIA-MKA",
     "es": {
-      "name": "Almendras",
-      "desc": "Licor de almendras artesanal, suave y aromático."
+      "name": "Merkaba Anís",
+      "shortDesc": "Una joya de los licores Merkaba, este delicioso aperitivo creado con anís.",
+      "desc": "Una joya de los licores Merkaba, este delicioso aperitivo creado con anís cambiará tu forma de pensar sobre esta inigualable especia. Elaborado bajo un proceso artesanal que resulta en un licor de alta calidad, cuerpo y sabor."
     },
     "en": {
-      "name": "Almond",
-      "desc": "Artisanal almond liqueur, smooth and aromatic."
+      "name": "Merkaba Anise",
+      "shortDesc": "A jewel of the Merkaba line, this delicious aperitif is made with anise.",
+      "desc": "A jewel of the Merkaba line, this delicious aperitif made with anise will change the way you think about this incomparable spice. Crafted through an artisanal process that results in exceptional quality, body, and flavor."
     }
   },
   {
     "id": 5,
     "category": "Licores",
-    "image": "img/product-7.jpg",
-    "price": 24.99,
-    "code": "GNT-005",
+    "image": "img/Merkaba-Jengibre.jpg",
+    "volume": "500ml",
+    "abv": "17%",
+    "price": 25.00,
+    "code": "GIA-MKJ",
     "es": {
-      "name": "Jengibre",
-      "desc": "Licor artesanal con el picante fresco del jengibre."
+      "name": "Merkaba Jengibre",
+      "shortDesc": "Extraordinario Merkaba elaborado a partir del jengibre y especias.",
+      "desc": "Extraordinario Merkaba elaborado a partir del jengibre y especias, para aquellos a quienes les gusta ese delicioso picor y los beneficios que aporta esta interesante raíz. Elaborado bajo un proceso artesanal de clarificación y maduración que resulta en un licor de alta calidad, cuerpo y sabor."
     },
     "en": {
-      "name": "Ginger",
-      "desc": "Artisanal liqueur with the fresh, spicy kick of ginger."
+      "name": "Merkaba Ginger",
+      "shortDesc": "An extraordinary Merkaba made from ginger and spices.",
+      "desc": "An extraordinary Merkaba made from ginger and spices, for those who love that delicious kick and the benefits of this fascinating root. Crafted through an artisanal clarification and aging process that results in exceptional quality, body, and flavor."
     }
   },
   {
     "id": 6,
-    "category": "Whisky",
+    "category": "Licores",
     "image": null,
-    "price": 34.99,
-    "code": "GNT-006",
+    "volume": "500ml",
+    "abv": "17%",
+    "price": 25.00,
+    "code": "GIA-MKG",
     "es": {
-      "name": "Single Malt Clásico",
-      "desc": "Cálido y sofisticado para paladares exigentes."
+      "name": "Merkaba Guanábana",
+      "shortDesc": "Licor de la fruta favorita del maestro licorero.",
+      "desc": "Licor de la fruta favorita del maestro licorero, una verdadera delicia con notas elevadas de guanábana que lo hacen perfecto en boca, ideal para esos amantes de la guanábana y sus beneficios. Elaborado bajo un proceso artesanal que resulta en un licor de alta calidad, cuerpo y sabor."
     },
     "en": {
-      "name": "Classic Single Malt",
-      "desc": "Warm and sophisticated for discerning palates."
+      "name": "Merkaba Soursop",
+      "shortDesc": "A liqueur made from our master distiller's favorite fruit.",
+      "desc": "A liqueur made from our master distiller's favorite fruit — a true delight with pronounced soursop notes that make it perfect on the palate, ideal for lovers of soursop and its benefits. Crafted through an artisanal process that results in exceptional quality, body, and flavor."
     }
   },
   {
     "id": 7,
-    "category": "Vinos",
+    "category": "Licores",
     "image": null,
-    "price": 28.99,
-    "code": "GNT-007",
+    "volume": "500ml",
+    "abv": "20%",
+    "price": 25.00,
+    "code": "GIA-RAM",
     "es": {
-      "name": "Tinto Reserva",
-      "desc": "Elegante y complejo, ideal para cenas formales."
+      "name": "Rambala Licor de Café",
+      "shortDesc": "Elaborado con amor para los amantes del café.",
+      "desc": "Elaborado con amor para los amantes del café, este impresionante y delicioso licor está hecho con café gourmet 100% puro de Boquete. El tostado delicado de los granos de café brinda un aroma floral de cítricos y tonos afrutados, con un regusto achocolatado y de nueces que lo hacen súper exquisito al paladar."
     },
     "en": {
-      "name": "Reserva Red",
-      "desc": "Elegant and complex, ideal for formal dinners."
+      "name": "Rambala Coffee Liqueur",
+      "shortDesc": "Made with love for coffee lovers, crafted with 100% pure gourmet coffee from Boquete.",
+      "desc": "Made with love for coffee lovers, this impressive and delicious liqueur is crafted with 100% pure gourmet coffee from Boquete. The delicate roast of the coffee beans brings a floral aroma of citrus and fruity tones, with a chocolatey, nutty finish that makes it truly exquisite on the palate."
     }
   },
   {
     "id": 8,
-    "category": "Otros",
-    "image": null,
-    "price": 26.99,
-    "code": "GNT-008",
+    "category": "Licores",
+    "image": "img/Abydos.jpg",
+    "volume": "375ml",
+    "abv": "17%",
+    "price": 30.00,
+    "code": "GIA-ABY",
     "es": {
-      "name": "Vermut Artesanal",
-      "desc": "Aromático y sofisticado, ideal para coctelería."
+      "name": "Abydos Licor de Almendras",
+      "shortDesc": "El licor del Faraón: cuenta la leyenda que Abydos era la bebida favorita del Faraón Kefrén.",
+      "desc": "El licor del Faraón: cuenta la leyenda que Abydos era la bebida favorita del Faraón Kefrén, entregada en sus manos por el mismo «Aton Rá» al escuchar sus plegarias de cansancio por haber edificado las pirámides de Giza. Este le brindó la relajación absoluta a través de este delicioso licor de almendras."
     },
     "en": {
-      "name": "Artisan Vermouth",
-      "desc": "Aromatic and sophisticated, ideal for cocktails."
+      "name": "Abydos Almond Liqueur",
+      "shortDesc": "The Pharaoh's liqueur: legend has it Abydos was the favorite drink of Pharaoh Khafre.",
+      "desc": "The Pharaoh's liqueur: legend has it that Abydos was the favorite drink of Pharaoh Khafre, placed in his hands by Aton Rá himself upon hearing his weary prayers after building the pyramids of Giza — granting him absolute relaxation through this delicious almond liqueur."
+    }
+  },
+  {
+    "id": 9,
+    "category": "Licores",
+    "image": null,
+    "volume": "375ml",
+    "abv": "20%",
+    "price": 35.00,
+    "code": "GIA-ADK",
+    "es": {
+      "name": "Alfa Drakonis",
+      "shortDesc": "Es un licor premium, hecho a base de frutas silvestres y sangre de dragón.",
+      "desc": "Es un licor premium, hecho a base de frutas silvestres y sangre de dragón, bajo un proceso premium artesanal se convierte en la receta secreta del maestro licorero, teniendo notas afrutadas frescas y un picor suave que sin duda despertará todos tus sentidos."
+    },
+    "en": {
+      "name": "Alfa Drakonis",
+      "shortDesc": "A premium liqueur made with wild berries and dragon's blood.",
+      "desc": "A premium liqueur made with wild berries and dragon's blood — through a premium artisanal process, it becomes our master distiller's secret recipe, with fresh fruity notes and a gentle kick that will awaken all your senses."
+    }
+  },
+  {
+    "id": 10,
+    "category": "Licores",
+    "image": null,
+    "volume": "375ml",
+    "abv": "20%",
+    "price": 35.00,
+    "code": "GIA-LDK",
+    "es": {
+      "name": "Lady Drakarys Licor de Pitaya",
+      "shortDesc": "Es un licor premium, hecho a base de pitaya y sangre de dragón.",
+      "desc": "Es un licor premium, hecho a base de pitaya y sangre de dragón, bajo un proceso premium artesanal diseñado para ser la acompañante de Alfa Drakonis, siendo la reina de los dragones de la casa Gianteli, aportando su hermoso color, aroma y sabor de la pitaya a través de tonos a bosque fresco y frutos rojos. Sin duda, un licor único en su clase."
+    },
+    "en": {
+      "name": "Lady Drakarys Dragon Fruit Liqueur",
+      "shortDesc": "A premium liqueur made with dragon fruit and dragon's blood.",
+      "desc": "A premium liqueur made with dragon fruit and dragon's blood, crafted through a premium artisanal process as the companion to Alfa Drakonis — the queen of the Gianteli house dragons, bringing the beautiful color, aroma, and flavor of dragon fruit through fresh forest and red berry notes. A truly one-of-a-kind liqueur."
+    }
+  },
+  {
+    "id": 11,
+    "category": "Whisky",
+    "image": null,
+    "volume": "750ml",
+    "abv": "35%",
+    "price": 50.00,
+    "code": "GIA-WDK",
+    "es": {
+      "name": "Lord Drakonis",
+      "shortDesc": "La obra maestra Lord Drakonis es un whisky como ninguno; su gran sabor y tolerancia lo hacen muy aceptado.",
+      "desc": "La obra maestra Lord Drakonis es un whisky como ninguno. Su gran sabor y tolerancia lo hacen muy aceptado y permiten sentir todas sus especias, siendo exquisito. Este imponente whisky combina la delicia de la miel con la fuerza del roble y otras especias que lo convierten en un whisky especiado de alta intensidad, siendo una excelente opción para impresionar en tus reuniones."
+    },
+    "en": {
+      "name": "Lord Drakonis",
+      "shortDesc": "The masterpiece Lord Drakonis is a whisky like no other, loved for its great flavor and smoothness.",
+      "desc": "The masterpiece Lord Drakonis is a whisky like no other. Its great flavor and smoothness make it widely loved, letting every spice come through beautifully. This impressive whisky combines the sweetness of honey with the strength of oak and other spices, making it a bold, spiced whisky and an excellent choice to impress at your gatherings."
+    }
+  },
+  {
+    "id": 12,
+    "category": "Ron",
+    "image": null,
+    "volume": "500ml",
+    "abv": "37.5%",
+    "price": 25.00,
+    "code": "GIA-RSL",
+    "es": {
+      "name": "San Lorenzo",
+      "shortDesc": "Si quieres una verdadera explosión de sabor en tu boca, San Lorenzo es lo que buscas.",
+      "desc": "Si quieres una verdadera explosión de sabor en tu boca, San Lorenzo es lo que buscas: un ron que no tiene nada que envidiar a otros rones. Nuestro maestro licorero realmente la botó con este ron, ya que en él vas a encontrar una marcada combinación de intensidad, añejamiento y sabor de diferentes combinaciones de especias que lo distinguen. Elaborado con raspadura y envejecido en roble bajo un proceso premium artesanal."
+    },
+    "en": {
+      "name": "San Lorenzo",
+      "shortDesc": "A true explosion of flavor — a rum with nothing to envy in any other.",
+      "desc": "If you want a true explosion of flavor, San Lorenzo is what you're looking for: a rum with nothing to envy in any other. Our master distiller truly outdid himself with this one — you'll find a distinctive combination of intensity, aging, and layered spice flavors that set it apart. Made with raw cane sugar and aged in oak through a premium artisanal process."
+    }
+  },
+  {
+    "id": 13,
+    "category": "Vinos",
+    "image": null,
+    "volume": "750ml",
+    "abv": "10%",
+    "price": 25.00,
+    "code": "GIA-SMM",
+    "es": {
+      "name": "Sangría de mango Máxima",
+      "shortDesc": "Una sangría como ninguna otra, te envuelve en su deliciosa textura.",
+      "desc": "Una sangría como ninguna otra: te envuelve en su deliciosa textura y ese sabor suave del mango que te hace no querer parar de tomarla. Elaborada a partir de vino blanco y pulpa de mango, la convierten en la mejor opción para refrescar tus tardes. Ganadora del mejor cóctel de mango en la Feria del Mango 2026."
+    },
+    "en": {
+      "name": "Máxima Mango Sangria",
+      "shortDesc": "A sangria like no other, with a smooth mango flavor that keeps you coming back for more.",
+      "desc": "A sangria like no other: it wraps you in its delicious texture and smooth mango flavor that keeps you coming back for more. Made from white wine and mango pulp, it's the perfect way to refresh your afternoons. Winner of Best Mango Cocktail at the 2026 Mango Fair."
     }
   }
 ]
