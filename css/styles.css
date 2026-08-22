@@ -197,6 +197,7 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -523,6 +524,12 @@ button {
 
 .detail-code {
   color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.detail-volume {
+  color: var(--muted);
+  font-size: 0.9rem;
   margin: 0 0 1rem;
 }
 
