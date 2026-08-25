@@ -21,7 +21,7 @@
   {
     "id": 2,
     "category": "Licores",
-    "image": null,
+    "image": "img/Merkaba-Pina.jpg",
     "volume": "500ml",
     "abv": "25%",
     "price": 25.00,
@@ -97,7 +97,7 @@
   {
     "id": 6,
     "category": "Licores",
-    "image": null,
+    "image": "img/Merkaba-Guanabana.jpg",
     "volume": "500ml",
     "abv": "17%",
     "price": 25.00,
@@ -173,7 +173,7 @@
   {
     "id": 10,
     "category": "Licores",
-    "image": null,
+    "image": "img/lady-Drakarys.jpg",
     "volume": "375ml",
     "abv": "20%",
     "price": 35.00,
@@ -192,7 +192,7 @@
   {
     "id": 11,
     "category": "Whisky",
-    "image": null,
+    "image": "img/Lord-Drakonis.jpg",
     "volume": "750ml",
     "abv": "35%",
     "price": 50.00,
@@ -211,7 +211,7 @@
   {
     "id": 12,
     "category": "Ron",
-    "image": null,
+    "image": "img/San-Lorenzo.jpg",
     "volume": "500ml",
     "abv": "37.5%",
     "price": 25.00,
@@ -230,7 +230,7 @@
   {
     "id": 13,
     "category": "Vinos",
-    "image": null,
+    "image": "img/Sangria-Maxima.jpg",
     "volume": "750ml",
     "abv": "10%",
     "price": 25.00,
