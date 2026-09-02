@@ -116,7 +116,7 @@
   {
     "id": 7,
     "category": "Licores",
-    "image": null,
+    "image": "img/Rambala.jpg",
     "volume": "500ml",
     "abv": "20%",
     "price": 25.00,
@@ -154,7 +154,7 @@
   {
     "id": 9,
     "category": "Licores",
-    "image": null,
+    "image": "img/Alfa-Drakonis.jpg",
     "volume": "375ml",
     "abv": "20%",
     "price": 35.00,
