@@ -38,25 +38,6 @@
     }
   },
   {
-    "id": 3,
-    "category": "Licores",
-    "image": "img/Merkaba-Cacao.jpg",
-    "volume": "500ml",
-    "abv": "25%",
-    "price": 25.00,
-    "code": "GIA-MKC",
-    "es": {
-      "name": "Merkaba Cacao",
-      "shortDesc": "Es un licor de cacao premium 100% panameño.",
-      "desc": "Es un licor de cacao premium 100% panameño, proveniente de la costa caribeña de Colón. Es realmente un licor que tienes que probar. Elaborado bajo un proceso artesanal que resulta en un licor de alta calidad, cuerpo y sabor."
-    },
-    "en": {
-      "name": "Merkaba Cacao",
-      "shortDesc": "A premium 100% Panamanian cacao liqueur.",
-      "desc": "A premium 100% Panamanian cacao liqueur from the Caribbean coast of Colón. This is truly a liqueur you have to try, crafted through an artisanal process that results in exceptional quality, body, and flavor."
-    }
-  },
-  {
     "id": 4,
     "category": "Licores",
     "image": "img/Merkaba-Anis.jpg",
